@@ -1,11 +1,11 @@
 # [Redux](http://rackt.github.io/redux)
 
-Redux is a predictable state container for JavaScript apps.  
+Redux es un contenedor predecible del state de aplicaciones Javascript.  
 
-It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test. On top of that, it provides a great developer experience, such as [live code editing combined with a time traveling debugger](https://github.com/gaearon/redux-devtools).
+Ayuda a escribir aplicaciones que se comportan de manera consistente, que se ejecutan en diferentes entornos (cliente, servidor, y nativo), y son faciles de testear. Ademas de eso, provee una gran experiencia al desarrollador, como [edicion de codigo en tiempo real combinada con un debugger que permite viajar en el tiempo](https://github.com/gaearon/redux-devtools).
 
-You can use Redux together with [React](https://facebook.github.io/react/), or with any other view library.  
-It is tiny (2kB) and has no dependencies.
+Usted puede usar Redux en conjunto con [React](https://facebook.github.io/react/), o con cualquier otra libreria que maneje vistas.
+Es muy pequeña (2kB) y no tiene dependencias.
 
 [![build status](https://img.shields.io/travis/rackt/redux/master.svg?style=flat-square)](https://travis-ci.org/rackt/redux)
 [![npm version](https://img.shields.io/npm/v/redux.svg?style=flat-square)](https://www.npmjs.com/package/redux)
@@ -14,7 +14,7 @@ It is tiny (2kB) and has no dependencies.
 [![#rackt on freenode](https://img.shields.io/badge/irc-%23rackt%20%40%20freenode-61DAFB.svg?style=flat-square)](https://webchat.freenode.net/)
 
 
-### Testimonials
+### Testimonios
 
 >[“Love what you’re doing with Redux”](https://twitter.com/jingc/status/616608251463909376)  
 >Jing Chen, creator of Flux
@@ -25,9 +25,9 @@ It is tiny (2kB) and has no dependencies.
 >[“It's cool that you are inventing a better Flux by not doing Flux at all.”](https://twitter.com/andrestaltz/status/616271392930201604)  
 >André Staltz, creator of Cycle
 
-### Developer Experience
+### Experiencia de Desarrollo
 
-I wrote Redux while working on my React Europe talk called [“Hot Reloading with Time Travel”](https://www.youtube.com/watch?v=xsSnOQynTHs). My goal was to create a state management library with minimal API but completely predictable behavior, so it is possible to implement logging, hot reloading, time travel, universal apps, record and replay, without any buy-in from the developer.
+Escribi Redux mientras trabajaba en una charla de React Europe llamada [“Hot Reloading with Time Travel”](https://www.youtube.com/watch?v=xsSnOQynTHs). My goal was to create a state management library with minimal API but completely predictable behavior, so it is possible to implement logging, hot reloading, time travel, universal apps, record and replay, without any buy-in from the developer.
 
 ### Influences
 
