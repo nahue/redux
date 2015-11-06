@@ -27,11 +27,11 @@ Es muy pequeña (2kB) y no tiene dependencias.
 
 ### Experiencia de Desarrollo
 
-Escribi Redux mientras trabajaba en una charla de React Europe llamada [“Hot Reloading with Time Travel”](https://www.youtube.com/watch?v=xsSnOQynTHs). My goal was to create a state management library with minimal API but completely predictable behavior, so it is possible to implement logging, hot reloading, time travel, universal apps, record and replay, without any buy-in from the developer.
+Escribi Redux mientras trabajaba en una charla de React Europe llamada [“Hot Reloading with Time Travel”](https://www.youtube.com/watch?v=xsSnOQynTHs). Mi meta fue crear una libraria de manejo de state con una API minimalista pero con un comportamiento totalmente predecible, de tal manera que sea posible implementar logging, hot reloading, time travel, apps universales, grabar y re-reproducir, sin ningun tipo de compromiso de parte del desarrollador.
 
-### Influences
+### Influencias
 
-Redux evolves the ideas of [Flux](https://facebook.github.io/flux), but avoids its complexity by taking cues from [Elm](https://github.com/evancz/elm-architecture-tutorial/).  
+Redux evoluciona ideas de [Flux](https://facebook.github.io/flux), pero evita sus complejidades tomando conceptos claves de [Elm](https://github.com/evancz/elm-architecture-tutorial/).  
 Whether you have used them or not, Redux only takes a few minutes to get started with.
 
 ### Installation
