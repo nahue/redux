@@ -111,23 +111,23 @@ En vez de mutar el state directamente, usted especifica las mutaciones que quier
 
 Si usted viene de Flux, hay una importante diferencia para comprender. Redux no tiene un Dispatcher o soporta muchos stores. En cambio, hay solo un store con solo una funcion reductora. Mientras su aplicacion crece, en vez de agregar stores, usted divide el reductor raiz en reductores (reducers) mas pequeños que operan independientemente en las diferentes partes del state. Esto es exactamente igual a que si hubiera un componente principal en una aplicacion React, pero que esta compuesto por muchos componentes pequeños.
 
-This architecture might seem like an overkill for a counter app, but the beauty of this pattern is how well it scales to large and complex apps. It also enables very powerful developer tools, because it is possible to trace every mutation to the action that caused it. You can record user sessions and reproduce them just by replaying every action.
+Esta arquitectura puede parecer demasiado grande para una aplicacion *contador*, pero la belleza de este patron es lo bien que escala hacia aplicaciones grandes y complejas. Tambien permite herramientas de desarrollador muy potentes, porque es posible rastrear y enlazar cada mutacion y la accion que la causo. Puede *grabar* sesiones de usuario y reproducirlas solo ejecutando cada accion de la sesion.
 
-### Documentation
+### Documentacion
 
-* [Introduction](http://rackt.github.io/redux/docs/introduction/index.html)
-* [Basics](http://rackt.github.io/redux/docs/basics/index.html)
-* [Advanced](http://rackt.github.io/redux/docs/advanced/index.html)
-* [Recipes](http://rackt.github.io/redux/docs/recipes/index.html)
-* [Troubleshooting](http://rackt.github.io/redux/docs/Troubleshooting.html)
-* [Glossary](http://rackt.github.io/redux/docs/Glossary.html)
-* [API Reference](http://rackt.github.io/redux/docs/api/index.html)
+* [Introduccion](http://rackt.github.io/redux/docs/introduction/index.html)
+* [Basica](http://rackt.github.io/redux/docs/basics/index.html)
+* [Avanzada](http://rackt.github.io/redux/docs/advanced/index.html)
+* [Recetas](http://rackt.github.io/redux/docs/recipes/index.html)
+* [Resolucion de Problemas](http://rackt.github.io/redux/docs/Troubleshooting.html)
+* [Glosario](http://rackt.github.io/redux/docs/Glossary.html)
+* [Referencia API](http://rackt.github.io/redux/docs/api/index.html)
 
-For PDF, ePub, and MOBI exports for offline reading, and instructions on how to create them, please see: [paulkogel/redux-offline-docs](https://github.com/paulkogel/redux-offline-docs).
+Para leer offline en formatos PDF, ePub, and MOBI, y las instrucciones de como crearlos, por favor vea: [paulkogel/redux-offline-docs](https://github.com/paulkogel/redux-offline-docs).
 
-### Examples
+### Ejemplos
 
-* [Counter](http://rackt.github.io/redux/docs/introduction/Examples.html#counter) ([source](https://github.com/rackt/redux/tree/master/examples/counter))
+* [Contador](http://rackt.github.io/redux/docs/introduction/Examples.html#counter) ([source](https://github.com/rackt/redux/tree/master/examples/counter))
 * [TodoMVC](http://rackt.github.io/redux/docs/introduction/Examples.html#todomvc) ([source](https://github.com/rackt/redux/tree/master/examples/todomvc))
 * [Todos with Undo](http://rackt.github.io/redux/docs/introduction/Examples.html#todos-with-undo) ([source](https://github.com/rackt/redux/tree/master/examples/todos-with-undo))
 * [Async](http://rackt.github.io/redux/docs/introduction/Examples.html#async) ([source](https://github.com/rackt/redux/tree/master/examples/async))
@@ -137,11 +137,11 @@ For PDF, ePub, and MOBI exports for offline reading, and instructions on how to 
 
 If you’re new to the NPM ecosystem and have troubles getting a project up and running, or aren’t sure where to paste the gist above, check out [simplest-redux-example](https://github.com/jackielii/simplest-redux-example) that uses Redux together with React and Browserify.
 
-### Discussion
+### Discusion
 
 Join the [#redux](https://discord.gg/0ZcbPKXt5bZ6au5t) channel of the [Reactiflux](http://reactiflux.com) Discord community.
 
-### Thanks
+### Agradecimientos
 
 * [The Elm Architecture](https://github.com/evancz/elm-architecture-tutorial) for a great intro to modeling state updates with reducers;
 * [Turning the database inside-out](http://blog.confluent.io/2015/03/04/turning-the-database-inside-out-with-apache-samza/) for blowing my mind;
@@ -156,12 +156,12 @@ Join the [#redux](https://discord.gg/0ZcbPKXt5bZ6au5t) channel of the [Reactiflu
 
 Special thanks to [Jamie Paton](http://jdpaton.github.io) for handing over the `redux` NPM package name.
 
-### Change Log
+### Cambios
 
 This project adheres to [Semantic Versioning](http://semver.org/).  
 Every release, along with the migration instructions, is documented on the Github [Releases](https://github.com/rackt/redux/releases) page.
 
-### Patrons
+### Patrones
 
 The work on Redux was [funded by the community](https://www.patreon.com/reactdx).  
 Meet some of the outstanding companies that made it possible:
@@ -171,6 +171,6 @@ Meet some of the outstanding companies that made it possible:
 
 [See the full list of Redux patrons.](PATRONS.md)
 
-### License
+### Licencia
 
 MIT
