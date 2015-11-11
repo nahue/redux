@@ -32,45 +32,46 @@ Escribi Redux mientras trabajaba en una charla de React Europe llamada [“Hot R
 ### Influencias
 
 Redux evoluciona ideas de [Flux](https://facebook.github.io/flux), pero evita sus complejidades tomando conceptos claves de [Elm](https://github.com/evancz/elm-architecture-tutorial/).  
-Whether you have used them or not, Redux only takes a few minutes to get started with.
+Los haya usado o no, solo tomara unos minuto para empezar con Redux.
 
-### Installation
+### Instalacion
 
-To install the stable version:
+Para instalar la version estable:
 
 ```
 npm install --save redux
 ```
 
-Most likely, you’ll also need [the React bindings](http://github.com/gaearon/react-redux) and [the developer tools](http://github.com/gaearon/redux-devtools).
+Lo mas probable es que tambien necesite [los conectores a React](http://github.com/gaearon/react-redux) y [las herramientas para desarrolladores](http://github.com/gaearon/redux-devtools).
 
 ```
 npm install --save react-redux
 npm install --save-dev redux-devtools
 ```
 
-This assumes that you’re using [npm](http://npmjs.com/) package manager with a module bundler like [Webpack](http://webpack.github.io) or [Browserify](http://browserify.org/) to consume [CommonJS modules](http://webpack.github.io/docs/commonjs.html).
+Esto asume que esta usando el administrador de paquetes [npm](http://npmjs.com/) con un compilador de modulos como [Webpack](http://webpack.github.io) o [Browserify](http://browserify.org/) para consumir [modulos CommonJS](http://webpack.github.io/docs/commonjs.html).
 
-If you don’t yet use [npm](http://npmjs.com/) or a modern module bundler, and would rather prefer a single-file [UMD](https://github.com/umdjs/umd) build that makes `Redux` available as a global object, you can grab a pre-built version from [cdnjs](https://cdnjs.com/libraries/redux). We *don’t* recommend this approach for any serious application, as most of the libraries complementary to Redux are only available on [npm](http://npmjs.com/).
+Si usted todavia no utilizar [npm](http://npmjs.com/) o un compilador de modulos moderno, y prefiere utilizar un build de un unico archivo [UMD](https://github.com/umdjs/umd) que provee `Redux` como un objeto global, puede descargar una version pre-compilada de [cdnjs](https://cdnjs.com/libraries/redux). Nosotros *no* recomdamos este procedimiento para una aplicacion seria, ya que la mayoria de las librerias complementarias a Redux solo estan disponibles en [npm](http://npmjs.com/).
 
-### The Gist
+### El Gist
 
-The whole state of your app is stored in an object tree inside a single *store*.  
-The only way to change the state tree is to emit an *action*, an object describing what happened.  
-To specify how the actions transform the state tree, you write pure *reducers*.
+Todo el state de su aplicacion esta guardado en un objeto dentro de un unico *store*.  
+La unica manera de cambiar el state es emitiendo una *accion*, un objeto describiendo que acaba de suceder.  
+Para especificar como las acciones transforman el state, usted escribe *reducers* puros.
 
-That’s it!
+Eso es todo!
 
 ```js
 import { createStore } from 'redux'
 
 /**
- * This is a reducer, a pure function with (state, action) => state signature.
- * It describes how an action transforms the state into the next state.
+ * Este es un reducer, una funcion pura con la firma (state, action) => state.
+ * Describe como la accion transforma el state en el proximo state.
  *
- * The shape of the state is up to you: it can be a primitive, an array, an object,
- * or even an Immutable.js data structure. The only important part is that you should
- * not mutate the state object, but return a new object if the state changes.
+ * La forma del state depende de usted: puede ser un primitivo, un array, un objeto,
+ * o hasta una estructura de datos Immutable.js. La unica parte importante es que usted
+ * no debe mutar el objeto del state, sino devolver un nuevo objeto con los cambios en
+ * el state.
  *
  * In this example, we use a `switch` statement and strings, but you can use a helper that
  * follows a different convention (such as function maps) if it makes sense for your project.
