@@ -135,11 +135,11 @@ Para leer offline en formatos PDF, ePub, and MOBI, y las instrucciones de como c
 * [Real World](http://rackt.github.io/redux/docs/introduction/Examples.html#real-world) ([source](https://github.com/rackt/redux/tree/master/examples/real-world))
 * [Shopping Cart](http://rackt.github.io/redux/docs/introduction/Examples.html#shopping-cart) ([source](https://github.com/rackt/redux/tree/master/examples/shopping-cart))
 
-If you’re new to the NPM ecosystem and have troubles getting a project up and running, or aren’t sure where to paste the gist above, check out [simplest-redux-example](https://github.com/jackielii/simplest-redux-example) that uses Redux together with React and Browserify.
+Si usted es nuevo al ecosistema NPM y tiene problemas creando y ejecutando un proyecto, o no esta seguro de donde pegar el gist anterior, revise [simplest-redux-example](https://github.com/jackielii/simplest-redux-example) que usa Redux junto con React y Browserify.
 
 ### Discusion
 
-Join the [#redux](https://discord.gg/0ZcbPKXt5bZ6au5t) channel of the [Reactiflux](http://reactiflux.com) Discord community.
+Unase al canal [#redux](https://discord.gg/0ZcbPKXt5bZ6au5t) de la comunidad [Reactiflux](http://reactiflux.com) de Discord.
 
 ### Agradecimientos
 
@@ -158,18 +158,18 @@ Special thanks to [Jamie Paton](http://jdpaton.github.io) for handing over the `
 
 ### Cambios
 
-This project adheres to [Semantic Versioning](http://semver.org/).  
-Every release, along with the migration instructions, is documented on the Github [Releases](https://github.com/rackt/redux/releases) page.
+Este proyecto se adhiere a [Semantic Versioning](http://semver.org/).  
+Cada, junto con las instrucciones de migracion, esta documentada en la pagina [Releases](https://github.com/rackt/redux/releases) de Github.
 
 ### Patrones
 
-The work on Redux was [funded by the community](https://www.patreon.com/reactdx).  
-Meet some of the outstanding companies that made it possible:
+El trabajo en Redux fue [fundado por la comunidad](https://www.patreon.com/reactdx).  
+Conocza alguna de las empresas mas destacadas que lo hicieron posible:
 
 * [Webflow](http://webflow.com/)
 * [Chess iX](http://www.chess-ix.com/)
 
-[See the full list of Redux patrons.](PATRONS.md)
+[Vea la lista completa de patrones Redux.](PATRONS.md)
 
 ### Licencia
 
