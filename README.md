@@ -73,8 +73,9 @@ import { createStore } from 'redux'
  * no debe mutar el objeto del state, sino devolver un nuevo objeto con los cambios en
  * el state.
  *
- * In this example, we use a `switch` statement and strings, but you can use a helper that
- * follows a different convention (such as function maps) if it makes sense for your project.
+ * En este ejemplo utilizamos una declaracion `switch` y strings, pero tambien puede
+ * usar un helper que siga una convencion distinta (como funciones que usen maps)
+ * si es que tiene sentido para su proyecto.
  */
 function counter(state = 0, action) {
   switch (action.type) {
@@ -87,17 +88,17 @@ function counter(state = 0, action) {
   }
 }
 
-// Create a Redux store holding the state of your app.
-// Its API is { subscribe, dispatch, getState }.
+// Crear un store Redux que contiene el state de su app.
+// Su API es { subscribe, dispatch, getState }.
 let store = createStore(counter)
 
-// You can subscribe to the updates manually, or use bindings to your view layer.
+// Usted puede suscribir a las actualizaciones manualmente, o usar bindings desde las vistas.
 store.subscribe(() =>
   console.log(store.getState())
 )
 
-// The only way to mutate the internal state is to dispatch an action.
-// The actions can be serialized, logged or stored and later replayed.
+// La unica manera de mutar el state interno es disparando una accion.
+// Las acciones pueden ser serializadas, logueadas, o guardadas y ser reproducidas mas tarde.
 store.dispatch({ type: 'INCREMENT' })
 // 1
 store.dispatch({ type: 'INCREMENT' })
@@ -106,9 +107,9 @@ store.dispatch({ type: 'DECREMENT' })
 // 1
 ```
 
-Instead of mutating the state directly, you specify the mutations you want to happen with plain objects called *actions*. Then you write a special function called a *reducer* to decide how every action transforms the entire application’s state.
+En vez de mutar el state directamente, usted especifica las mutaciones que quiere que sucedan con objetos planos llamados *acciones*. Entonces usted escriba una funcion especial llamada *reducer* para decidir como la accion transforma el state de toda la aplicacion.
 
-If you’re coming from Flux, there is a single important difference you need to understand. Redux doesn’t have a Dispatcher or support many stores. Instead, there is just a single store with a single root reducing function. As your app grows, instead of adding stores, you split the root reducer into smaller reducers independently operating on the different parts of the state tree. This is exactly like there is just one root component in a React app, but it is composed out of many small components.
+Si usted viene de Flux, hay una importante diferencia para comprender. Redux no tiene un Dispatcher o soporta muchos stores. En cambio, hay solo un store con solo una funcion reductora. Mientras su aplicacion crece, en vez de agregar stores, usted divide el reductor raiz en reductores (reducers) mas pequeños que operan independientemente en las diferentes partes del state. Esto es exactamente igual a que si hubiera un componente principal en una aplicacion React, pero que esta compuesto por muchos componentes pequeños.
 
 This architecture might seem like an overkill for a counter app, but the beauty of this pattern is how well it scales to large and complex apps. It also enables very powerful developer tools, because it is possible to trace every mutation to the action that caused it. You can record user sessions and reproduce them just by replaying every action.
 
